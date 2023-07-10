@@ -1,6 +1,6 @@
 # DBDocs Generation Script
 
-This repository contains a script that automatically
+This repository contains a script that automatically generates database documentation and uploads documentation to [dbdocs](https://dbdocs.io/team/Altum).
 
 ### Installation Instructions
 
