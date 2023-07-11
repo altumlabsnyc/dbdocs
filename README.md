@@ -4,7 +4,7 @@ This repository contains a script that automatically generates database document
 
 ### Installation Instructions
 
-1. Request the .env from Alex that contains the connection details to Supabase and DBDocs.
+1. Request the `.env` from Alex that contains the connection details to Supabase and DBDocs.
 2. Install the following dependencies after navigating to the project directory:
    - Make sure you have node installed.
    - `npm i`
@@ -14,4 +14,4 @@ This repository contains a script that automatically generates database document
 
 ### Usage
 
-You can now run the script with `npm run start`. A schema.sql and a schema.dbml will be output to the project directory.
+You can now run the `index.js` script with `npm run start`. A `schema.sql` and a `schema.dbml` will be output to the project directory.

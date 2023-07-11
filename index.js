@@ -24,8 +24,22 @@ exec(command, (error, stdout, stderr) => {
     return;
   }
 
+  const sql = stdout;
+
+  // iterate through each line of dbmlFile and slice each line after the '::' if there is a '::' on that line
+  const sqlLines = sql.split("\n");
+  const sqlLinesWithoutBadDefaults = sqlLines.map((line) => {
+    if (line.includes("::")) {
+      const lineWithoutComments = line.slice(0, line.indexOf("::"));
+      return lineWithoutComments + ",";
+    } else {
+      return line;
+    }
+  });
+  const sqlContent = sqlLinesWithoutBadDefaults.join("\n");
+
   // write the output to a file
-  fs.writeFile("schema.sql", stdout, (err) => {
+  fs.writeFile("schema.sql", sqlContent, (err) => {
     if (err) throw err;
     console.log("Schema has been saved!");
 
@@ -46,8 +60,10 @@ exec(command, (error, stdout, stderr) => {
 
       const projectData = `Project altum {\n\tdatabase_type: 'altum'\n}\n\n`;
 
+      const dbmlFile = projectData + dbmlFileContent;
+
       // write the output to a file
-      fs.writeFile("schema.dbml", projectData + dbmlFileContent, (err) => {
+      fs.writeFile("schema.dbml", dbmlFile, (err) => {
         if (err) throw err;
         console.log("DBML file has been created!");
       });
