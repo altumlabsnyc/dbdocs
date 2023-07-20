@@ -214,3 +214,84 @@ SyntaxError: Expected ")", ",", "CHECK", "CONSTRAINT", "DEFAULT", "DEFERRABLE", 
     at importHandler (/usr/local/lib/node_modules/@dbml/cli/lib/cli/import.js:25:27)
 {"start":{"offset":3256,"line":169,"column":5},"end":{"offset":3257,"line":169,"column":6}}
 
+2023-07-11T17:03:53.282Z
+SyntaxError: You have a syntax error at "schema.sql" line 30 column 12. Expected "COLUMN" or "TABLE" but "S" found.
+    at /usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:45:13
+    at Array.forEach (<anonymous>)
+    at generate (/usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:39:14)
+    at importHandler (/usr/local/lib/node_modules/@dbml/cli/lib/cli/import.js:25:27)
+    at Object.sql2dbml (/usr/local/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/usr/local/lib/node_modules/@dbml/cli/bin/sql2dbml.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+
+ROOT_ERROR:
+SyntaxError: Expected "COLUMN" or "TABLE" but "S" found.
+    at peg$buildStructuredError (/usr/local/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/postgresParser.js:34:7205)
+    at Object.peg$parse [as parse] (/usr/local/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/postgresParser.js:43:598)
+    at Function.parsePostgresToJSON (/usr/local/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:38:41)
+    at Function.parse (/usr/local/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:64:32)
+    at Object._import [as import] (/usr/local/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/import/index.js:11:37)
+    at /usr/local/lib/node_modules/@dbml/cli/lib/cli/import.js:25:68
+    at /usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:42:23
+    at Array.forEach (<anonymous>)
+    at generate (/usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:39:14)
+    at importHandler (/usr/local/lib/node_modules/@dbml/cli/lib/cli/import.js:25:27)
+{"start":{"offset":643,"line":30,"column":12},"end":{"offset":644,"line":30,"column":13}}
+
+2023-07-20T17:30:45.870Z
+SyntaxError: You have a syntax error at "schema.sql" line 864 column 8. Expected "GLOBAL", "INDEX", "LOCAL", "SCHEMA", "SEQUENCE", "TABLE", "TEMP", "TEMPORARY", "TYPE", "UNIQUE", "UNLOGGED", or "VIEW" but "P" found.
+    at /usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:45:13
+    at Array.forEach (<anonymous>)
+    at generate (/usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:39:14)
+    at importHandler (/usr/local/lib/node_modules/@dbml/cli/lib/cli/import.js:25:27)
+    at Object.sql2dbml (/usr/local/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/usr/local/lib/node_modules/@dbml/cli/bin/sql2dbml.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+
+ROOT_ERROR:
+SyntaxError: Expected "GLOBAL", "INDEX", "LOCAL", "SCHEMA", "SEQUENCE", "TABLE", "TEMP", "TEMPORARY", "TYPE", "UNIQUE", "UNLOGGED", or "VIEW" but "P" found.
+    at peg$buildStructuredError (/usr/local/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/postgresParser.js:34:7205)
+    at Object.peg$parse [as parse] (/usr/local/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/postgresParser.js:43:598)
+    at Function.parsePostgresToJSON (/usr/local/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:38:41)
+    at Function.parse (/usr/local/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:64:32)
+    at Object._import [as import] (/usr/local/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/import/index.js:11:37)
+    at /usr/local/lib/node_modules/@dbml/cli/lib/cli/import.js:25:68
+    at /usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:42:23
+    at Array.forEach (<anonymous>)
+    at generate (/usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:39:14)
+    at importHandler (/usr/local/lib/node_modules/@dbml/cli/lib/cli/import.js:25:27)
+{"start":{"offset":20333,"line":864,"column":8},"end":{"offset":20334,"line":864,"column":9}}
+
+2023-07-20T17:32:59.466Z
+SyntaxError: You have a syntax error at "schema.sql" line 864 column 8. Expected "GLOBAL", "INDEX", "LOCAL", "SCHEMA", "SEQUENCE", "TABLE", "TEMP", "TEMPORARY", "TYPE", "UNIQUE", "UNLOGGED", or "VIEW" but "P" found.
+    at /usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:45:13
+    at Array.forEach (<anonymous>)
+    at generate (/usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:39:14)
+    at importHandler (/usr/local/lib/node_modules/@dbml/cli/lib/cli/import.js:25:27)
+    at Object.sql2dbml (/usr/local/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/usr/local/lib/node_modules/@dbml/cli/bin/sql2dbml.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+
+ROOT_ERROR:
+SyntaxError: Expected "GLOBAL", "INDEX", "LOCAL", "SCHEMA", "SEQUENCE", "TABLE", "TEMP", "TEMPORARY", "TYPE", "UNIQUE", "UNLOGGED", or "VIEW" but "P" found.
+    at peg$buildStructuredError (/usr/local/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/postgresParser.js:34:7205)
+    at Object.peg$parse [as parse] (/usr/local/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/postgresParser.js:43:598)
+    at Function.parsePostgresToJSON (/usr/local/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:38:41)
+    at Function.parse (/usr/local/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:64:32)
+    at Object._import [as import] (/usr/local/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/import/index.js:11:37)
+    at /usr/local/lib/node_modules/@dbml/cli/lib/cli/import.js:25:68
+    at /usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:42:23
+    at Array.forEach (<anonymous>)
+    at generate (/usr/local/lib/node_modules/@dbml/cli/lib/cli/utils.js:39:14)
+    at importHandler (/usr/local/lib/node_modules/@dbml/cli/lib/cli/import.js:25:27)
+{"start":{"offset":20333,"line":864,"column":8},"end":{"offset":20334,"line":864,"column":9}}
+
