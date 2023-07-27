@@ -27,18 +27,35 @@ exec(command, (error, stdout, stderr) => {
   const sql = stdout
 
   // iterate through each line of dbmlFile and slice each line after the '::' if there is a '::' on that line
+  let inFunction = false
+
   const sqlLines = sql.split("\n")
-  const sqlLinesWithoutBadDefaults = sqlLines.map((line) => {
-    if (line.includes("::")) {
-      const lineWithoutComments = line.slice(0, line.indexOf("::"))
-      return lineWithoutComments + ","
-    } else {
-      return line
+  const sqlLinesWithoutFunctionsOrTriggers = sqlLines.reduce((lines, line) => {
+    if (line.includes("CREATE FUNCTION public.")) {
+      inFunction = true
     }
-  })
-  const sqlLinesWithoutPolices = sqlLinesWithoutBadDefaults.filter(
+
+    if (!inFunction && !line.includes("CREATE TRIGGER")) {
+      // Your previous logic
+      if (line.includes("::")) {
+        const lineWithoutComments = line.slice(0, line.indexOf("::"))
+        lines.push(lineWithoutComments + ",")
+      } else {
+        lines.push(line)
+      }
+    }
+
+    if (line.includes("$$;")) {
+      inFunction = false
+    }
+
+    return lines
+  }, [])
+
+  const sqlLinesWithoutPolices = sqlLinesWithoutFunctionsOrTriggers.filter(
     (line) => !line.includes("CREATE POLICY")
   )
+
   const sqlContent = sqlLinesWithoutPolices.join("\n")
 
   // write the output to a file
