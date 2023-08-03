@@ -376,3 +376,138 @@ SyntaxError: Expected "GLOBAL", "INDEX", "LOCAL", "SCHEMA", "SEQUENCE", "TABLE",
     at importHandler (/usr/local/lib/node_modules/@dbml/cli/lib/cli/import.js:25:27)
 {"start":{"offset":15191,"line":771,"column":8},"end":{"offset":15192,"line":771,"column":9}}
 
+2023-08-03T16:54:12.904Z
+SyntaxError: You have a syntax error at "schema.sql" line 2087 column 4. Expected "ALTER", "COMMENT", "CREATE", "DROP", "INSERT", "RESET", "SELECT", "SET", "USE", end of input, or space but "F" found.
+    at /opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:45:13
+    at Array.forEach (<anonymous>)
+    at generate (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:39:14)
+    at importHandler (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/import.js:25:27)
+    at Object.sql2dbml (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/opt/homebrew/lib/node_modules/@dbml/cli/bin/sql2dbml.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1267:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1321:10)
+    at Module.load (node:internal/modules/cjs/loader:1125:32)
+    at Module._load (node:internal/modules/cjs/loader:965:12)
+
+ROOT_ERROR:
+SyntaxError: Expected "ALTER", "COMMENT", "CREATE", "DROP", "INSERT", "RESET", "SELECT", "SET", "USE", end of input, or space but "F" found.
+    at peg$buildStructuredError (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/postgresParser.js:34:7205)
+    at Object.peg$parse [as parse] (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/postgresParser.js:43:598)
+    at Function.parsePostgresToJSON (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:38:41)
+    at Function.parse (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:64:32)
+    at Object._import [as import] (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/import/index.js:11:37)
+    at /opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/import.js:25:68
+    at /opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:42:23
+    at Array.forEach (<anonymous>)
+    at generate (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:39:14)
+    at importHandler (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/import.js:25:27)
+{"start":{"offset":46547,"line":2087,"column":4},"end":{"offset":46548,"line":2087,"column":5}}
+
+2023-08-03T18:59:25.462Z
+SyntaxError: You have a syntax error at "schema.sql" line 2087 column 4. Expected "ALTER", "COMMENT", "CREATE", "DROP", "INSERT", "RESET", "SELECT", "SET", "USE", end of input, or space but "F" found.
+    at /opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:45:13
+    at Array.forEach (<anonymous>)
+    at generate (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:39:14)
+    at importHandler (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/import.js:25:27)
+    at Object.sql2dbml (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/opt/homebrew/lib/node_modules/@dbml/cli/bin/sql2dbml.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1267:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1321:10)
+    at Module.load (node:internal/modules/cjs/loader:1125:32)
+    at Module._load (node:internal/modules/cjs/loader:965:12)
+
+ROOT_ERROR:
+SyntaxError: Expected "ALTER", "COMMENT", "CREATE", "DROP", "INSERT", "RESET", "SELECT", "SET", "USE", end of input, or space but "F" found.
+    at peg$buildStructuredError (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/postgresParser.js:34:7205)
+    at Object.peg$parse [as parse] (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/postgresParser.js:43:598)
+    at Function.parsePostgresToJSON (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:38:41)
+    at Function.parse (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:64:32)
+    at Object._import [as import] (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/import/index.js:11:37)
+    at /opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/import.js:25:68
+    at /opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:42:23
+    at Array.forEach (<anonymous>)
+    at generate (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:39:14)
+    at importHandler (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/import.js:25:27)
+{"start":{"offset":46546,"line":2087,"column":4},"end":{"offset":46547,"line":2087,"column":5}}
+
+2023-08-03T19:16:05.833Z
+SyntaxError: You have a syntax error at "schema.sql" line 980 column 8. Expected "GLOBAL", "INDEX", "LOCAL", "SCHEMA", "SEQUENCE", "TABLE", "TEMP", "TEMPORARY", "TYPE", "UNIQUE", "UNLOGGED", or "VIEW" but "P" found.
+    at /opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:45:13
+    at Array.forEach (<anonymous>)
+    at generate (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:39:14)
+    at importHandler (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/import.js:25:27)
+    at Object.sql2dbml (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/opt/homebrew/lib/node_modules/@dbml/cli/bin/sql2dbml.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1267:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1321:10)
+    at Module.load (node:internal/modules/cjs/loader:1125:32)
+    at Module._load (node:internal/modules/cjs/loader:965:12)
+
+ROOT_ERROR:
+SyntaxError: Expected "GLOBAL", "INDEX", "LOCAL", "SCHEMA", "SEQUENCE", "TABLE", "TEMP", "TEMPORARY", "TYPE", "UNIQUE", "UNLOGGED", or "VIEW" but "P" found.
+    at peg$buildStructuredError (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/postgresParser.js:34:7205)
+    at Object.peg$parse [as parse] (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/postgresParser.js:43:598)
+    at Function.parsePostgresToJSON (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:38:41)
+    at Function.parse (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:64:32)
+    at Object._import [as import] (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/import/index.js:11:37)
+    at /opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/import.js:25:68
+    at /opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:42:23
+    at Array.forEach (<anonymous>)
+    at generate (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:39:14)
+    at importHandler (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/import.js:25:27)
+{"start":{"offset":33893,"line":980,"column":8},"end":{"offset":33894,"line":980,"column":9}}
+
+2023-08-03T19:21:20.596Z
+SyntaxError: You have a syntax error at "schema.sql" line 2087 column 4. Expected "ALTER", "COMMENT", "CREATE", "DROP", "INSERT", "RESET", "SELECT", "SET", "USE", end of input, or space but "F" found.
+    at /opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:45:13
+    at Array.forEach (<anonymous>)
+    at generate (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:39:14)
+    at importHandler (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/import.js:25:27)
+    at Object.sql2dbml (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/opt/homebrew/lib/node_modules/@dbml/cli/bin/sql2dbml.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1267:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1321:10)
+    at Module.load (node:internal/modules/cjs/loader:1125:32)
+    at Module._load (node:internal/modules/cjs/loader:965:12)
+
+ROOT_ERROR:
+SyntaxError: Expected "ALTER", "COMMENT", "CREATE", "DROP", "INSERT", "RESET", "SELECT", "SET", "USE", end of input, or space but "F" found.
+    at peg$buildStructuredError (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/postgresParser.js:34:7205)
+    at Object.peg$parse [as parse] (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/postgresParser.js:43:598)
+    at Function.parsePostgresToJSON (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:38:41)
+    at Function.parse (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:64:32)
+    at Object._import [as import] (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/import/index.js:11:37)
+    at /opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/import.js:25:68
+    at /opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:42:23
+    at Array.forEach (<anonymous>)
+    at generate (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:39:14)
+    at importHandler (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/import.js:25:27)
+{"start":{"offset":46546,"line":2087,"column":4},"end":{"offset":46547,"line":2087,"column":5}}
+
+2023-08-03T19:32:53.844Z
+SyntaxError: You have a syntax error at "schema.sql" line 1 column 1. Reference with the same endpoints already exists: "public"."molecule_wiki"("state_code", "country_code") references "public"."state"("state_code", "country_code")
+    at /opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:45:13
+    at Array.forEach (<anonymous>)
+    at generate (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/utils.js:39:14)
+    at importHandler (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/import.js:25:27)
+    at Object.sql2dbml (/opt/homebrew/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/opt/homebrew/lib/node_modules/@dbml/cli/bin/sql2dbml.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1267:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1321:10)
+    at Module.load (node:internal/modules/cjs/loader:1125:32)
+    at Module._load (node:internal/modules/cjs/loader:965:12)
+
+ROOT_ERROR:
+Error: Reference with the same endpoints already exists: "public"."molecule_wiki"("state_code", "country_code") references "public"."state"("state_code", "country_code")
+    at Ref.error (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/model_structure/element.js:55:13)
+    at Schema.checkRef (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/model_structure/schema.js:159:13)
+    at Schema.pushRef (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/model_structure/schema.js:144:12)
+    at /opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/model_structure/database.js:133:20
+    at Array.forEach (<anonymous>)
+    at Database.processSchemaElements (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/model_structure/database.js:107:16)
+    at new Database (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/model_structure/database.js:68:11)
+    at Function.parseJSONToDatabase (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:27:22)
+    at Function.parse (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:85:27)
+    at Object._import [as import] (/opt/homebrew/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/import/index.js:11:37)
+{"start":{"line":1,"column":1}}
+
